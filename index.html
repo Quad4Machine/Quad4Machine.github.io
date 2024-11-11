@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url(fondo.png);
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .chef-section {
+            padding: 4rem 2rem;
+        }
+
+        .chef-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            width: 1300px;
+            height: 400px;
+        }
+
+        .location-section {
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-left: 120px;
+            margin-right: 120px;
+        }
+        .location-icon {
+            vertical-align: middle;
+            height: 24px;
+            width: 24px;
+            margin-right: 5px;
+        }
+        .location-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Bienvenidos a El Cacerio</h1>
+    </div>
+
+    <section class="about-section">
+        <h2>Sobre Nosotros</h2>
+        <p>Podrá experimentar de cerca y en exclusiva el asado artesanal preparado frente a usted en nuestra parrilla hecha a medida. Nuestros menús de degustación de asados especialmente diseñados muestran los mejores ingredientes argentinos y carne de res alimentada con pasto local en preparaciones nuevas y creativas, perfectamente combinadas con variedades de vino de las bodegas más antiguas de Argentina.</p>
+        <img src="restaurante.jpg" alt="Imagen del restaurante">
+    </section>
+
+    <section class="chef-section">
+        <div class="chef-content">
+            <div>
+                <h2>Nuestros Chefs</h2>
+                <p>Nuestro equipo de chefs expertos combina técnicas tradicionales con innovación culinaria para crear experiencias gastronómicas únicas. Con años de experiencia en la cocina argentina, nuestros chefs se dedican a mantener la autenticidad de nuestros platos mientras agregan su toque creativo único.</p>
+            </div>
+            <video controls src="chef_video.mp4" type="video/mp4"></video>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <h2 id="donde-estamos" style="color: #ff0000; text-align: center; font-size: 2.5em;">¿DONDE ESTAMOS?</h2>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <div style="flex: 1;">
+                <h3 style="color: #ff0000; text-align: left;">CIUDAD EVITA</h3>
+                
+                <div class="location-info">
+                    <img src="icono de ubicacion.png" alt="Ubicación" class="location-icon">
+                    <span>El Tordo 773</span>
+                </div>
+                
+                <div class="location-info">
+                    <img src="icono de telefono.png" alt="Teléfono" class="location-icon">
+                    <span>123-456-7890</span>
+                </div>
+                
+                <div class="location-info">
+                    <img src="icono de reloj.png" alt="Horario" class="location-icon">
+                    <p style="text-align: left;">Todos los días abierto de 10am a 00hs.<br>
+                    Viernes, Sábados y preferiados,<br>
+                    cerramos 2am.</p>
+                </div>
+
+                <button style="background-color: #ff0000; color: white; border: none; padding: 10px 20px; cursor: pointer; display: flex;"><a style="text-decoration: none; color: white;" href="https://www.google.com/maps/search/?api=1&query=El+Tordo+773,+Ciudad+Evita,+Argentina" target="_blank" rel="noopener noreferrer">VER EN EL MAPA</a></button>
+            </div>
+
+            <div style="flex: 1;">
+                <img src="entrada.png" alt="Restaurant entrance" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        © 2024 El Cacerio. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
